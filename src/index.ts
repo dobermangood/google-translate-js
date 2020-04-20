@@ -33,7 +33,7 @@ export const setCORS = (CORSURL: string) => {
 // function translate(text: string, to: string, from: string, tld: string) {
 export function translate(
   text: string,
-  opts_: { from?: string; to?: string; hl?: string; tld?: string; raw?: boolean } = {}
+  opts_: { from?: string; to?: string; hl?: string; tld?: string; raw?: boolean; client?: string; } = {}
 ) {
   const opts: TranslateOptions = {
     from: opts_.from || "auto",
