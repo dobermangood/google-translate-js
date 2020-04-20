@@ -3,13 +3,7 @@ Based on [google-translate-api](https://github.com/matheuss/google-translate-api
 ## Install
 
 ```bash
-npm install google-translate-api-browser
-```
-
-or
-
-```bash
-yarn add google-translate-api-browser
+npm i @dobermangood/google-translate-js
 ```
 
 For cross origin requests it uses [cors-anywhere
