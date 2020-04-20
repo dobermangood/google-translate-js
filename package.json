@@ -1,12 +1,12 @@
 {
-  "name": "google-translate-api-browser",
-  "version": "1.1.71",
+  "name": "google-translate-js",
+  "version": "1",
   "description": "A free and unlimited API for Google Translate that works in browser",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cjvnjde/google-translate-api-browser"
+    "url": "https://github.com/DobermanGood/google-translate-js"
   },
   "scripts": {
     "build": "tsc --declaration"
@@ -18,12 +18,12 @@
     "translate",
     "api",
     "free",
-    "language"
+    "language",
+    "js"
   ],
   "author": {
-    "name": "Matheus Fernandes",
-    "email": "npm@matheus.top",
-    "url": "http://matheus.top"
+    "name": "dobermangood",
+    "email": "mail.dobermangood@gmail.com"
   },
   "license": "MIT",
   "dependencies": {

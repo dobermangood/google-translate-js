@@ -8,6 +8,7 @@ interface TranslateOptions {
   hl: string;
   raw: boolean;
   tld: string;
+  client: string;
 }
 
 interface Token {
@@ -39,7 +40,8 @@ export function translate(
     to: opts_.to || "en",
     hl: opts_.hl || "en",
     raw: opts_.raw || false,
-    tld: opts_.tld || "com"
+    tld: opts_.tld || "com",
+    client: opts_.client || "webapp",
   };
 
   let e: Error | null = null;
@@ -61,7 +63,7 @@ export function translate(
       const url =
         "https://translate.google." + opts.tld + "/translate_a/single";
       const data = {
-        client: "gtx",
+        client: opts.client,
         sl: getCode(opts.from),
         tl: getCode(opts.to),
         hl: getCode(opts.hl),
